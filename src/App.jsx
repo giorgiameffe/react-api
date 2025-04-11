@@ -1,13 +1,15 @@
-import { useState } from 'react'
+// componenti
+import Header from './assets/Header.jsx';
+import Main from './assets/Main.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-
+      <Header />
+      <Main />
     </>
   )
 }
 
-export default App
+export default App;
