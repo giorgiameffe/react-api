@@ -15,14 +15,31 @@ export default function Main() {
 
         // fare chiamata axios
         axios.get(endpoint)
-            .then(res => console.log(res.data)) // => stampare in console la lista delle attrici
+            .then(res => setActresses(res.data));
     }
 
     useEffect(fetchActresses, []);
 
     return (
         <main>
-
+            <div className="container">
+                <div className='cards-raw'>
+                    {actresses.map(actress =>
+                        <section className='card' key={actress.id} onChange={event => setActresses(event.target.value)}>
+                            <h3>{actress.name}</h3>
+                            <figure>
+                                <img src={actress.image} alt={actress.name} />
+                            </figure>
+                            <u>
+                                <li> Birth Year: {actress.birth_year}</li>
+                                <li> Nationality: {actress.nationality}</li>
+                                <li> Biography: {actress.biography}</li>
+                                <li> Awards: {actress.awards}</li>
+                            </u>
+                        </section>
+                    )}
+                </div>
+            </div>
         </main>
     )
 }
