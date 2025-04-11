@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import ActressCard from './main-components/ActressCard';
+
 
 // Main 
 
@@ -25,18 +27,16 @@ export default function Main() {
             <div className="container">
                 <div className='cards-raw'>
                     {actresses.map(actress =>
-                        <section className='card' key={actress.id} onChange={event => setActresses(event.target.value)}>
+                        <ActressCard className='card' key={actress.id} name={actress.name} onChange={event => setActresses(event.target.value)}>
                             <h3>{actress.name}</h3>
                             <figure>
                                 <img src={actress.image} alt={actress.name} />
                             </figure>
-                            <u>
-                                <li> Birth Year: {actress.birth_year}</li>
-                                <li> Nationality: {actress.nationality}</li>
-                                <li> Biography: {actress.biography}</li>
-                                <li> Awards: {actress.awards}</li>
-                            </u>
-                        </section>
+                            <li> Birth Year: {actress.birth_year}</li>
+                            <li> Nationality: {actress.nationality}</li>
+                            <li> Biography: {actress.biography}</li>
+                            <li> Awards: {actress.awards}</li>
+                        </ActressCard>
                     )}
                 </div>
             </div>
