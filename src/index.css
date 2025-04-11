@@ -20,7 +20,7 @@ img {
 /* Common */
 
 .container {
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -37,13 +37,20 @@ h1 {
     font-size: 60px;
     text-align: center;
     font-style: italic;
-    color: #37251B;
+    color: #2e1e16;
+    margin: 30px 0px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #6e2929;
 }
 
 h3 {
     font-size: 25px;
     font-style: italic;
-    text-align: center;
+    text-align: centerS;
     padding-bottom: 30px;
     color: #37251B;
 }
@@ -54,7 +61,6 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 30px;
 }
 
 .cards-raw section {
@@ -62,13 +68,12 @@ h3 {
 }
 
 .card-img {
-    height: 280px;
-    width: 280px;
+    height: 250px;
+    width: 250px;
 }
 
 .card-img img {
-    border: 2px, solid, #37251B;
-    border-radius: 10px;
+    border-radius: 5px;
     object-fit: cover;
     object-position: top;
 }

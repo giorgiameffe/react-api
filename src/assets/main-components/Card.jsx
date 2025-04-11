@@ -1,6 +1,6 @@
 // Card singola 
 
-export default function ActressCard({ children, name }) {
+export default function Card({ children, name }) {
 
     return (
         <section>
