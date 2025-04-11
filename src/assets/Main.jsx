@@ -27,15 +27,14 @@ export default function Main() {
             <div className="container">
                 <div className='cards-raw'>
                     {actresses.map(actress =>
-                        <ActressCard className='card' key={actress.id} name={actress.name} onChange={event => setActresses(event.target.value)}>
-                            <h3>{actress.name}</h3>
-                            <figure>
+                        <ActressCard key={actress.id} name={actress.name} onChange={event => setActresses(event.target.value)}>
+                            <figure className='card-img'>
                                 <img src={actress.image} alt={actress.name} />
                             </figure>
-                            <li> Birth Year: {actress.birth_year}</li>
-                            <li> Nationality: {actress.nationality}</li>
-                            <li> Biography: {actress.biography}</li>
-                            <li> Awards: {actress.awards}</li>
+                            <li> <span>Birth Year:</span> {actress.birth_year}</li>
+                            <li> <span>Nationality:</span>  {actress.nationality}</li>
+                            <li> <span>Biography:</span> {actress.biography}</li>
+                            <li> <span>Awards:</span> {actress.awards}</li>
                         </ActressCard>
                     )}
                 </div>
