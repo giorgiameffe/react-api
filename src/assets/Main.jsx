@@ -8,7 +8,7 @@ import Card from './main-components/Card';
 
 // indirizzo API delle attrici 
 const actressesEndpoint = 'https://www.freetestapi.com/api/v1/actresses';
-
+// indirizzo API degli attori
 const actorsEndpoint = 'https://www.freetestapi.com/api/v1/actors';
 
 export default function Main() {

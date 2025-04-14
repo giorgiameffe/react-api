@@ -1,12 +1,29 @@
-# React + Vite
+# Cast Fetching
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Consegna:
 
-Currently, two official plugins are available:
+E’ arrivato il momento di mettere insieme i concetti appresi. Creiamo una piccola app che ci mostri un elenco di attori o attrici.
+Usate uno di questi due endpoint, a piacimento:
+```
+Lista di Attrici:   https://freetestapi.com/api/v1/actresses
+Lista di Attori:  https://freetestapi.com/api/v1/actors
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## MILESTONE 1
+Al caricamento dell'applicazione, recuperiamo la lista degli attori (o attrici) dalle API e stampiamoli in console.
 
-## Expanding the ESLint configuration
+## MILESTONE 2
+Prepariamo una card per ciascun attore/attrice, mostrandone le seguenti informazioni:
+- nome
+- anno nascita
+- nazionalità
+- biografia
+- immagine
+- riconoscimenti
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## MILESTONE 3
+Mostriamo in pagina una card per ciascun attore, con grafica a piacimento!
+### BONUS 1
+Stampare sia una lista delle attrici che degli attori, separatamente.
+### BONUS 2
+Stampare un’unica lista che contiene attori e attrici insieme!
